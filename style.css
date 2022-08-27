@@ -1,0 +1,74 @@
+:root {
+    --color-golden: #DCCA87;
+    --color-black: #0C0C0C;
+    --color-gray: #545454;
+    --color-crimson: #F5EFDB;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--color-black);
+
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: bold;
+    color: var(--color-golden);
+}
+
+.container {
+    border: 2px solid var(--color-crimson);
+    border-radius: 5px;
+    background-color: var(--color-black);
+    display: flex;
+    padding: 60px 80px;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    transition: .5s ease-in;
+}
+
+.time {
+    padding: 20px;
+    border: 2px solid var(--color-crimson);
+    border-radius: 5px;
+    color: var(--color-golden);
+    font-weight: 600;
+    cursor: default;
+}
+
+.btn {
+    color: var(--color-crimson);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 16px;
+
+    background-color: var(--color-black);
+    border: 2px solid var(--color-crimson);
+    border-radius: 5px;
+
+    padding: 6px 10px;
+
+    transition: .2s ease-out;
+}
+
+.btn:hover {
+    color: var(--color-black);
+    background-color: var(--color-crimson);
+    cursor: pointer;
+}
